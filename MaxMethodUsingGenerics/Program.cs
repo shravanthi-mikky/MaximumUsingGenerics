@@ -4,7 +4,8 @@ using MaxMethodUsingGenerics;
 Console.WriteLine("Welcome to MAximum Method Using Generics!");
 while(true)
 {
-    Console.WriteLine("PLease choose the option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings\n4)Maximum using generic Method");
+    Console.WriteLine("PLease choose the option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings\n4)Maximum using generic Method\n5)Max value sing generic class and method");
+    Console.WriteLine("------------------------------------------");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -31,6 +32,14 @@ while(true)
             Console.WriteLine("Maximum value when comparing three Float values is : " + genValue2);
             string genValue3 = GenericMethod.MaxValueGenerics("Animal", "Bananas", "Apple");
             Console.WriteLine("Maximum value when comparing three strings is : " + genValue3);
+            break;
+        case 5:
+            int genClass1 = GenericClass<int>.MaxValueGeneric<int>(10, 30, 50);
+            Console.WriteLine("Maximum value when comparing three integers  using generic class and method is : " + genClass1);
+            double genClass2 = GenericClass<double>.MaxValueGeneric<double>(10.4, 30.6, 50.9);
+            Console.WriteLine("Maximum value when comparing three float using generic class and method is : " + genClass2);
+            string genClass3 = GenericClass<string>.MaxValueGeneric<string>("Animal", "Bananas", "Apple");
+            Console.WriteLine("Maximum value when comparing three strings using generic class and method is : " + genClass3 + "\n");
             break;
         default:
             Console.WriteLine("Please choose the correct option :");
