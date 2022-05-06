@@ -8,8 +8,6 @@ namespace MaxMethodUsingGenerics
 {
     public class UsingStrings
     {
-      
-
             public string MaxValueStrings(string a, string b, string c)
             {
                 string max;
