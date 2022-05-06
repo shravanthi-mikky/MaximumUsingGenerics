@@ -4,7 +4,7 @@ using MaxMethodUsingGenerics;
 Console.WriteLine("Welcome to MAximum Method Using Generics!");
 while(true)
 {
-    Console.WriteLine("PLease choose the option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings\n4)Maximum using generic Method\n5)Max value sing generic class and method");
+    Console.WriteLine("PLease choose the option :\n1)Maximum of three Integers\n2)Maximum of three Float values\n3) Maximum of three Strings\n4)Maximum using generic Method\n5)Max value sing generic class and method\n6) Using params");
     Console.WriteLine("------------------------------------------");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
@@ -40,6 +40,17 @@ while(true)
             Console.WriteLine("Maximum value when comparing three float using generic class and method is : " + genClass2);
             string genClass3 = GenericClass<string>.MaxValueGeneric<string>("Animal", "Bananas", "Apple");
             Console.WriteLine("Maximum value when comparing three strings using generic class and method is : " + genClass3 + "\n");
+            break;
+        case 6:
+            int[] intArray = { 1, 2, 3, 4, 5, 6 };
+            double[] doubleArray = { 1.1, 1.4, 2.6, 6.8, 7.3 };
+            string[] stringArray = {"Bananas","Apple","Animal" };
+            int one = MaxOfMultipleInputs.ArrayOfIntegers(intArray);
+            Console.WriteLine("Maximum of IntArray is :"+one);
+            double one2 = MaxOfMultipleInputs.ArrayOfDouble(doubleArray);
+            Console.WriteLine("Maximum of given double values is :"+one2);
+            string one3 = MaxOfMultipleInputs.ArrayOfStrings(stringArray);
+            Console.WriteLine("Maximum of given string values is :" + one3);
             break;
         default:
             Console.WriteLine("Please choose the correct option :");

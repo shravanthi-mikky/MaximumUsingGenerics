@@ -32,12 +32,6 @@ namespace MaxMethodUsingGenerics
 
             return default;
         }
-        /*
-        public T MaxMethod()
-        {
-            T max = GenericClass<T>.MaxValueGeneric<T>(T firstValue,this.secondValue,this.thirdValue);
-            return max;
-        }
-        */
+       
     }
 }
