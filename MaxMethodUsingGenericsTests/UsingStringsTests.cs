@@ -15,7 +15,7 @@ namespace MaxMethodUsingGenerics.Tests
         [TestMethod()]
         public void MaxValueStringTest()
         {
-            UsingStrings obj2 = new UsingStrings();
+            UsingStrings obj2 = new();
             string value = obj2.MaxValueStrings("Apple", "Peach", "Banana");
             Assert.AreEqual("Banana", value);
         }
@@ -23,7 +23,7 @@ namespace MaxMethodUsingGenerics.Tests
         [TestMethod()]
         public void MaxValueStringTest2()
         {
-            UsingStrings obj3 = new UsingStrings();
+            UsingStrings obj3 = new();
             string value = obj3.MaxValueStrings("Banana", "Apple", "Peach");
             Assert.AreEqual("Banana", value);
         }
@@ -31,7 +31,7 @@ namespace MaxMethodUsingGenerics.Tests
         [TestMethod()]
         public void MaxValueStringTest3()
         {
-            UsingStrings obj4 = new UsingStrings();
+            UsingStrings obj4 = new();
             string value = obj4.MaxValueStrings("Peach", "Banana", "Apple");
             Assert.AreEqual("Banana", value);
         }
