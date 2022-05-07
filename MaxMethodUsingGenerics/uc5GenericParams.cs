@@ -14,9 +14,11 @@ namespace MaxMethodUsingGenerics
             this.inputArray = inputArray;
         }
 
-    public static T MaxOfMultipleUsingGenerics<T>(params T[] inputArray)
+        public static T MaxOfMultipleUsingGenerics<T>(params T[] inputArray)
         {
-            return inputArray.Max();
+            Array.Sort(inputArray);
+            return inputArray[inputArray.Length - 1];
+            //return inputArray.Max();
         }
     }
-}
+} 

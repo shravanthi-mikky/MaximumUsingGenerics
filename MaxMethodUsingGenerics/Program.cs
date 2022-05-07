@@ -59,7 +59,7 @@ while(true)
             double[] doubleInputArray = { 1.1,2.1,3.1,5.1,9.3};
             double two2 = Uc5GenericParams<double>.MaxOfMultipleUsingGenerics(doubleInputArray);
             Console.WriteLine("Max value of double array using generics :"+two2);
-            string[] stringInputArray = {"Apple","Banana","Grapes","GrapeFruit"};
+            string[] stringInputArray = {"Apple","Banana","GrapeFruit"};
             string two3 = Uc5GenericParams<string>.MaxOfMultipleUsingGenerics(stringInputArray);
             Console.WriteLine("Maximum of given string values is :" + two3);
             break;
